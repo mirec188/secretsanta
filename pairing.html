@@ -126,7 +126,6 @@
         </style>
 
         <script>
-
             var queryString = _.chain( location.search.slice( 1 ).split( /&/g ) )
                 .map( function ( item ) { if ( item ) return item.split( /=/ ).map( function ( str ) { return decodeURIComponent( str ); } ); } )
                 .compact().object().value();
@@ -147,7 +146,7 @@
             <div class="wrapper">
                 <div class="content">
 
-                    <div class="title">Hi <span id="name"></span>! You've been paired with</div>
+                    <div class="title">Ahoj <span id="name"></span>:-) Si tajný Santa pre</div>
                     <script>document.getElementById('name').innerText = name</script>
 
                     <div class="pairing">
@@ -164,7 +163,7 @@
                         </script>
                     </div>
 
-                    <div class="title">Good luck!</div>
+                    <div class="title">Veselé Vianoce !</div>
 
                     <script>
                         if (queryString.extra) {
@@ -175,9 +174,6 @@
                 </div>
             </div>
 
-            <a href="http://arcanis.github.io/secretsanta/" class="spirit-of-christmas">
-                Want to start your own Secret Santa with your friends? Click here to get started!
-            </a>
 
         </div>
 
